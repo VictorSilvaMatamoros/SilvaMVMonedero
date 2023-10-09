@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../CSS/monedero.css" type="text/css"/>
+    <title>Calculadora de Cambio</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="formulario">
+            <h2>Calcular Cambio</h2>
+            <form action=JSP/monedero.jsp method="post">
+                <label for="pre">Precio del Producto:</label><br>
+                <input type="number" step="0.01" id="pre" name="precio" required><br><br>
+
+                <label for="entr">Dinero Pagado:</label><br>
+                <input type="number" step="0.01" id="entr" name="entregado" required><br><br>
+
+                <input type="submit" name="enviar" value="Calcular Cambio">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
